@@ -1,14 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
+﻿using System.Threading;
 
 namespace DAN_XL_Kristina_Garcia_Francisco
 {
+    /// <summary>
+    /// Class that creates all comuter threads used for inital printing
+    /// </summary>
     class Computer
     {
+        /// <summary>
+        /// Creates all computer threads and starts them at the same time
+        /// </summary>
         public void AddComputers()
         {
             Document doc = new Document();
