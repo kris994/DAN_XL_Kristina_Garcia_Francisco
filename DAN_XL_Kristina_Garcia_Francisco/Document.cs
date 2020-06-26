@@ -71,9 +71,11 @@ namespace DAN_XL_Kristina_Garcia_Francisco
             threadName = Thread.CurrentThread.Name;
             doc = new Document(form, color, orientation);
 
-            Console.WriteLine("{0} sent request to print document with {1} form. Color: {2}. Orientation: {3}",
-                Thread.CurrentThread.Name, form, color, orientation);
+            // Time that takes to create the request
             Thread.Sleep(100);
+
+            Console.WriteLine("{0} sent request to print document with {1} form. Color: {2}. Orientation: {3}",
+                Thread.CurrentThread.Name, form, color, orientation);        
 
             // Let the next thread pass
             waitDocument.Set();
